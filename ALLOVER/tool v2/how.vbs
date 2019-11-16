@@ -1,0 +1,1 @@
+x=msgbox ("You Put A Number Dumb Shet",16,"LoL")

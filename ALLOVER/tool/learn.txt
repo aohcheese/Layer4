@@ -1,0 +1,27 @@
+                 ====================================================================================================================                                                    
+                                                                     syn flood   
+                Requests to a target's system in an attempt to consume enough server resources to make the system unresponsive to legitimate traffic.               
+                                                          point to point connect 
+                First rule= between two routers directly without any host or any other networking in between. It can provide connection authentication, transmission encryption and compression.      
+                =======================================================================================================================
+                                                             OSI LAYERS AND HOW IT WORKS
+                                                 FIRST TO START OF THERE IS ONLY 7 LAYERS OF OSI
+                                                                  1=HISTORY 
+                                                                  2=DATA LINK
+                                                                  3=NETWORK
+                                                                  4=TRANSPORT
+                                                                  5=SESSION
+                                                                  6=PRESENTATION
+                                                                  7=APPLICATION
+                ========================================================================================================================                                      WHAT YOU NEED TO KNOW ABOUT THE ALL 7 LAYERS OF OSI
+                                             1=FIRST TO START OF THERE IS ONLY 7 LAYERS OF OSI
+                                             2=OSI to model or trace how data is sent or received over a network
+                ========================================================================================================================
+                                                              CON ABOUT THE OSI MODELS
+                                                        1=Doesn’t define any particular protocol
+                =========================================================================================================================
+                                                                HOW DOES TCP WORK
+                 Is allows one computer to talk to another computer via the Internet through compiling packets of data and sending them to right location.
+                =========================================================================================================================== 
+                                                      MABE BY YOUR_OFFLINE JUST NOW LEARNING
+                                                                   10/13/2019
