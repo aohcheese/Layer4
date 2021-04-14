@@ -1,13 +1,83 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine. See: https://circleci.com/docs/2.0/configuration-reference
-version: 2.1
-# Use a package of configuration called an orb.
-orbs:
-  # Declare a dependency on the welcome-orb
-  welcome: circleci/welcome-orb@0.4.1
-# Orchestrate or schedule a set of jobs
-workflows:
-  # Name the workflow "welcome"
-  welcome:
-    # Run the welcome/run job in its own container
-    jobs:
-      - welcome/run
+# Generated with the following on 2018-06-22T18:42:27.694153
+#
+#   openstack tripleo container image prepare --output-env-file /home/stack/containers-default-parameters.yaml -e /usr/share/openstack-tripleo-heat-templates/environments/docker.yaml -e /home/stack/containers-prepare-parameter.yaml
+#
+
+parameter_defaults:
+  DockerAodhApiImage: 192.168.24.1:8787/tripleomaster/centos-binary-aodh-api:current-tripleo-rdo
+  DockerAodhConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-aodh-api:current-tripleo-rdo
+  DockerAodhEvaluatorImage: 192.168.24.1:8787/tripleomaster/centos-binary-aodh-evaluator:current-tripleo-rdo
+  DockerAodhListenerImage: 192.168.24.1:8787/tripleomaster/centos-binary-aodh-listener:current-tripleo-rdo
+  DockerAodhNotifierImage: 192.168.24.1:8787/tripleomaster/centos-binary-aodh-notifier:current-tripleo-rdo
+  DockerCeilometerCentralImage: 192.168.24.1:8787/tripleomaster/centos-binary-ceilometer-central:current-tripleo-rdo
+  DockerCeilometerComputeImage: 192.168.24.1:8787/tripleomaster/centos-binary-ceilometer-compute:current-tripleo-rdo
+  DockerCeilometerConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-ceilometer-central:current-tripleo-rdo
+  DockerCeilometerNotificationImage: 192.168.24.1:8787/tripleomaster/centos-binary-ceilometer-notification:current-tripleo-rdo
+  DockerCinderApiImage: 192.168.24.1:8787/tripleomaster/centos-binary-cinder-api:current-tripleo-rdo
+  DockerCinderConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-cinder-api:current-tripleo-rdo
+  DockerCinderSchedulerImage: 192.168.24.1:8787/tripleomaster/centos-binary-cinder-scheduler:current-tripleo-rdo
+  DockerCinderVolumeImage: 192.168.24.1:8787/tripleomaster/centos-binary-cinder-volume:current-tripleo-rdo
+  DockerClustercheckConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-mariadb:current-tripleo-rdo
+  DockerClustercheckImage: 192.168.24.1:8787/tripleomaster/centos-binary-mariadb:current-tripleo-rdo
+  DockerCrondConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-cron:current-tripleo-rdo
+  DockerCrondImage: 192.168.24.1:8787/tripleomaster/centos-binary-cron:current-tripleo-rdo
+  DockerGlanceApiConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-glance-api:current-tripleo-rdo
+  DockerGlanceApiImage: 192.168.24.1:8787/tripleomaster/centos-binary-glance-api:current-tripleo-rdo
+  DockerGnocchiApiImage: 192.168.24.1:8787/tripleomaster/centos-binary-gnocchi-api:current-tripleo-rdo
+  DockerGnocchiConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-gnocchi-api:current-tripleo-rdo
+  DockerGnocchiMetricdImage: 192.168.24.1:8787/tripleomaster/centos-binary-gnocchi-metricd:current-tripleo-rdo
+  DockerGnocchiStatsdImage: 192.168.24.1:8787/tripleomaster/centos-binary-gnocchi-statsd:current-tripleo-rdo
+  DockerHAProxyConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-haproxy:current-tripleo-rdo
+  DockerHAProxyImage: 192.168.24.1:8787/tripleomaster/centos-binary-haproxy:current-tripleo-rdo
+  DockerHeatApiCfnConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-heat-api-cfn:current-tripleo-rdo
+  DockerHeatApiCfnImage: 192.168.24.1:8787/tripleomaster/centos-binary-heat-api-cfn:current-tripleo-rdo
+  DockerHeatApiConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-heat-api:current-tripleo-rdo
+  DockerHeatApiImage: 192.168.24.1:8787/tripleomaster/centos-binary-heat-api:current-tripleo-rdo
+  DockerHeatConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-heat-api:current-tripleo-rdo
+  DockerHeatEngineImage: 192.168.24.1:8787/tripleomaster/centos-binary-heat-engine:current-tripleo-rdo
+  DockerHorizonConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-horizon:current-tripleo-rdo
+  DockerHorizonImage: 192.168.24.1:8787/tripleomaster/centos-binary-horizon:current-tripleo-rdo
+  DockerInsecureRegistryAddress:
+  - 192.168.24.1:8787
+  DockerIscsidConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-iscsid:current-tripleo-rdo
+  DockerIscsidImage: 192.168.24.1:8787/tripleomaster/centos-binary-iscsid:current-tripleo-rdo
+  DockerKeystoneConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-keystone:current-tripleo-rdo
+  DockerKeystoneImage: 192.168.24.1:8787/tripleomaster/centos-binary-keystone:current-tripleo-rdo
+  DockerMemcachedConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-memcached:current-tripleo-rdo
+  DockerMemcachedImage: 192.168.24.1:8787/tripleomaster/centos-binary-memcached:current-tripleo-rdo
+  DockerMysqlClientConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-mariadb:current-tripleo-rdo
+  DockerMysqlConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-mariadb:current-tripleo-rdo
+  DockerMysqlImage: 192.168.24.1:8787/tripleomaster/centos-binary-mariadb:current-tripleo-rdo
+  DockerNeutronApiImage: 192.168.24.1:8787/tripleomaster/centos-binary-neutron-server:current-tripleo-rdo
+  DockerNeutronConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-neutron-server:current-tripleo-rdo
+  DockerNeutronDHCPImage: 192.168.24.1:8787/tripleomaster/centos-binary-neutron-dhcp-agent:current-tripleo-rdo
+  DockerNeutronL3AgentImage: 192.168.24.1:8787/tripleomaster/centos-binary-neutron-l3-agent:current-tripleo-rdo
+  DockerNeutronMetadataImage: 192.168.24.1:8787/tripleomaster/centos-binary-neutron-metadata-agent:current-tripleo-rdo
+  DockerNovaApiImage: 192.168.24.1:8787/tripleomaster/centos-binary-nova-api:current-tripleo-rdo
+  DockerNovaComputeImage: 192.168.24.1:8787/tripleomaster/centos-binary-nova-compute:current-tripleo-rdo
+  DockerNovaConductorImage: 192.168.24.1:8787/tripleomaster/centos-binary-nova-conductor:current-tripleo-rdo
+  DockerNovaConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-nova-api:current-tripleo-rdo
+  DockerNovaConsoleauthImage: 192.168.24.1:8787/tripleomaster/centos-binary-nova-consoleauth:current-tripleo-rdo
+  DockerNovaLibvirtConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-nova-compute:current-tripleo-rdo
+  DockerNovaLibvirtImage: 192.168.24.1:8787/tripleomaster/centos-binary-nova-libvirt:current-tripleo-rdo
+  DockerNovaMetadataImage: 192.168.24.1:8787/tripleomaster/centos-binary-nova-api:current-tripleo-rdo
+  DockerNovaPlacementConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-nova-placement-api:current-tripleo-rdo
+  DockerNovaPlacementImage: 192.168.24.1:8787/tripleomaster/centos-binary-nova-placement-api:current-tripleo-rdo
+  DockerNovaSchedulerImage: 192.168.24.1:8787/tripleomaster/centos-binary-nova-scheduler:current-tripleo-rdo
+  DockerNovaVncProxyImage: 192.168.24.1:8787/tripleomaster/centos-binary-nova-novncproxy:current-tripleo-rdo
+  DockerOpenvswitchImage: 192.168.24.1:8787/tripleomaster/centos-binary-neutron-openvswitch-agent:current-tripleo-rdo
+  DockerPankoApiImage: 192.168.24.1:8787/tripleomaster/centos-binary-panko-api:current-tripleo-rdo
+  DockerPankoConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-panko-api:current-tripleo-rdo
+  DockerQdrouterdConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-qdrouterd:current-tripleo-rdo
+  DockerQdrouterdImage: 192.168.24.1:8787/tripleomaster/centos-binary-qdrouterd:current-tripleo-rdo
+  DockerRabbitmqConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-rabbitmq:current-tripleo-rdo
+  DockerRabbitmqImage: 192.168.24.1:8787/tripleomaster/centos-binary-rabbitmq:current-tripleo-rdo
+  DockerRedisConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-redis:current-tripleo-rdo
+  DockerRedisImage: 192.168.24.1:8787/tripleomaster/centos-binary-redis:current-tripleo-rdo
+  DockerRsyslogSidecarConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-rsyslog-base:current-tripleo-rdo
+  DockerRsyslogSidecarImage: 192.168.24.1:8787/tripleomaster/centos-binary-rsyslog-base:current-tripleo-rdo
+  DockerSwiftAccountImage: 192.168.24.1:8787/tripleomaster/centos-binary-swift-account:current-tripleo-rdo
+  DockerSwiftConfigImage: 192.168.24.1:8787/tripleomaster/centos-binary-swift-proxy-server:current-tripleo-rdo
+  DockerSwiftContainerImage: 192.168.24.1:8787/tripleomaster/centos-binary-swift-container:current-tripleo-rdo
+  DockerSwiftObjectImage: 192.168.24.1:8787/tripleomaster/centos-binary-swift-object:current-tripleo-rdo
+  DockerSwiftProxyImage: 192.168.24.1:8787/tripleomaster/centos-binary-swift-proxy-server:current-tripleo-rdo
